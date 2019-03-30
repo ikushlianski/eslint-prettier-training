@@ -10,7 +10,7 @@
   },
   "rules": {
     "camelcase": "warn",
-    "comma-dangle": [2, "always"],
+    "comma-dangle": [2, "only-multiline"],
     "jsx-quotes": "warn",
     "max-classes-per-file": ["warn", 1],
     "max-len": ["warn", { "code": 80 }],
