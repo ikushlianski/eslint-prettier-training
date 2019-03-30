@@ -1,24 +1,29 @@
-var fooBar = bar;
+var fooBar = bar
 
 const a = (...arr) => {
-  let b = 5;
+    let b = 5
 
-  return arr.filter(x => x === b);
-};
-
-function something(arg1, arg2) {
-  if (fooBar == 9) {
-    let c = foo === 3 ? 4 : 3;
-
-    console.warn("something");
-
-    return { line: 5 && c };
-  }
-
-  something(
-    "some very long string argument",
-    "some very very very long string argument 2"
-  );
+    return arr.filter(x => x === b)
 }
 
-something();
+function something(arg1, arg2) {
+    if (fooBar == 9) {
+        let c = fooBar === 3 ? 4 : 3
+
+        console.warn("something")
+
+        const arr = ["something", "someone"]
+
+        return {
+            line: 5 && c,
+            flagged: true,
+        }
+    }
+
+    something(
+        "some very long string argument",
+        "some very very very long string argument 2"
+    )
+}
+
+something()
