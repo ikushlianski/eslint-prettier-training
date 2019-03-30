@@ -7,16 +7,18 @@ const a = (...arr) => {
 };
 
 function something(arg1, arg2) {
-  if (fooBar == 4) {
+  if (fooBar == 9) {
     let c = foo === 3 ? 4 : 3;
 
     console.warn("something");
 
-    return {line: 5 && c};
+    return { line: 5 && c };
   }
 
   something(
-    "some very long string argument", "some very very very long string argument 2");
+    "some very long string argument",
+    "some very very very long string argument 2"
+  );
 }
 
 something();
