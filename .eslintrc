@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion":8
   },
@@ -9,11 +9,18 @@
     "es6": true
   },
   "rules": {
+    "camelcase": "warn",
+    "comma-dangle": "off",
+    "jsx-quotes": "warn",
+    "max-classes-per-file": ["warn", 1],
+    "max-len": ["warn", { "code": 80 }],
+    "max-lines": ["error", 300],
+    "no-console": "off",
+    "no-unused-vars": "warn",
     "padding-line-between-statements": [
       "warn",
       { "blankLine": "always", "prev": "*", "next": "return" }
     ],
-    "no-unused-vars": "warn",
-    "comma-dangle":"off"
+    "require-await": "error"
   }
 }
