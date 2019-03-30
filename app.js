@@ -12,7 +12,7 @@ function something(arg1, arg2) {
 
     console.warn("something");
 
-    return {line: 5 && c };
+    return {line: 5 && c};
   }
 
   something(
