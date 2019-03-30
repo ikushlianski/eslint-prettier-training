@@ -6,16 +6,17 @@ const a = (...arr) => {
   return arr.filter(x => x === b);
 };
 
-async function something(arg1, arg2) {
+function something(arg1, arg2) {
   if (fooBar == 4) {
-    let c = (foo === 3) ? 4 : 3;
+    let c = foo === 3 ? 4 : 3;
 
-    console.warn('something')
+    console.warn("something");
 
-    return 5 && c;
+    return {line: 5 && c };
   }
 
-  something('some very long string argument', 'some very very very long string argument 2');
+  something(
+    "some very long string argument", "some very very very long string argument 2");
 }
 
 something();

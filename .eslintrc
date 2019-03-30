@@ -1,13 +1,14 @@
 {
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion":8
-  },
   "env": {
     "node": true,
     "browser": true,
     "es6": true
   },
+  "extends": ["plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion":8
+  },
+  "plugins": ["prettier"],
   "rules": {
     "camelcase": "warn",
     "comma-dangle": "off",
@@ -17,10 +18,12 @@
     "max-lines": ["error", 300],
     "no-console": "off",
     "no-unused-vars": "warn",
+    "object-curly-spacing": ["warn", "always"],
     "padding-line-between-statements": [
       "warn",
       { "blankLine": "always", "prev": "*", "next": "return" }
     ],
+    "prettier/prettier": "warn",
     "require-await": "error"
   }
 }
